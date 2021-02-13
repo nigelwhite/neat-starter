@@ -8,5 +8,5 @@ items:
       url: '#'
     - text: Blog
       url: '/blog'
-    - text: Book
-      url: '/book'
+    - text: Docs
+      url: '/docs'

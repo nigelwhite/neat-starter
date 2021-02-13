@@ -1,6 +1,5 @@
 ---
-title: My second book page
+title: My second doc page
 ---
 
-##{{ title }}
-This is my second book page.
+This is my second doc page.
