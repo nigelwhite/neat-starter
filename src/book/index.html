@@ -1,0 +1,31 @@
+---
+layout: book
+---
+
+<section class="mt-15">
+	{% set pageslist = collections.page %} {% for page in pageslist | reverse %}
+	<article class="my-8">
+		<h2 class="mb-2 text-3xl font-bold text-gray-900">
+			<a href="{{ page.url | url }}">
+				{% if page.data.title %} {{ page.data.title }} {% else %}
+				Untitled {% endif %}
+			</a>
+		</h2>
+		<p class="mb-3 text-base leading-6 text-gray-500">
+			<time>
+				{{ page.date | readableDate }} by
+				<a>{{ page.data.author }}</a>
+			</time>
+		</p>
+
+		<p>
+			<a
+				href="{{ page.url | url }}"
+				class="text-lg font-bold text-indigo-500"
+			>
+				Read more →
+			</a>
+		</p>
+	</article>
+	{% endfor %}
+</section>

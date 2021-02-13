@@ -1,5 +1,4 @@
 ---
-layout: book-layout.njk
 title: My second book page
 ---
 
