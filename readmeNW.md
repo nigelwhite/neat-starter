@@ -1,5 +1,9 @@
 # Settings
 
+Docs https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss
+
+Repo
+
 Run npm run start
 
 All html files are processed with Nunjacks
