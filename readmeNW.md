@@ -8,10 +8,12 @@ Run npm run start
 
 All html files are processed with Nunjacks
 
-Collections
+Collections in 11ty are defined only by tags
+Collections in Netlify CMS are defined in admin/config.yml
+Collections in my site
 
--   blog posts
--   doc pages
+-   blog of posts
+-   docs of pages
 
 Structure of a collection
 
