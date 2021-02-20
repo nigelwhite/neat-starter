@@ -29,7 +29,7 @@ collections:
             name: 'tags'
             multiple: true
             create: true
-            options: ['Tags', 'created', 'from', 'config.yml']
+            options: ['drupal', '11ty', 'alpine.js']
     - label: 'Docs'
       name: 'docs'
       folder: 'src/pages'
@@ -45,4 +45,4 @@ collections:
             name: 'tags'
             multiple: true
             create: true
-            options: ['Tags', 'created', 'from', 'config.yml']
+            options: ['drupal', '11ty', 'alpine.js']
