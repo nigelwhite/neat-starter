@@ -68,7 +68,7 @@ collections:
                 - { label: URL, name: url, widget: string }
     - label: 'Docs'
       name: 'docs'
-      folder: 'src/docs'
+      folder: 'src/pages'
       create: true
       editor:
           preview: false
