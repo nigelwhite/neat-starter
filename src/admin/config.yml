@@ -28,7 +28,6 @@ collections:
             label: 'tags'
             name: 'tags'
             multiple: true
-            create: true
             options: ['drupal', '11ty', 'alpine.js']
     - label: 'Docs'
       name: 'docs'
@@ -44,5 +43,4 @@ collections:
             label: 'tags'
             name: 'tags'
             multiple: true
-            create: true
             options: ['drupal', '11ty', 'alpine.js']
