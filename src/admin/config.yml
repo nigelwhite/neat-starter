@@ -28,7 +28,7 @@ collections:
             label: 'tags'
             name: 'tags'
             multiple: true
-            options: ['drupal', '11ty', 'alpine.js']
+            options: ['post', 'drupal', '11ty', 'alpine.js']
     - label: 'Docs'
       name: 'docs'
       folder: 'src/pages'
@@ -43,4 +43,4 @@ collections:
             label: 'tags'
             name: 'tags'
             multiple: true
-            options: ['drupal', '11ty', 'alpine.js']
+            options: ['page', 'drupal', '11ty', 'alpine.js']
