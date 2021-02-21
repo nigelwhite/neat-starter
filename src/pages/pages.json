@@ -1,4 +1,4 @@
 {
-	"layout": "docs",
-	"tags": ["page"]
+	"layout": "pages",
+	"tags": "page"
 }
