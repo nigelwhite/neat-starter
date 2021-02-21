@@ -10,11 +10,11 @@ prism: true
 			<time> {{ date | readableDate }}</time>
 		</p>
 		<div>
-			{%- for tag in tags %} {% if tag !== 'page' %}
-			<span class="inline-block px-3 py-1 bg-blue-300 rounded"
-				>{{ tag }}</span
-			>
-			{% endif %} {%- endfor %}
+			{%- for tag in tags %} {%- if tag !== 'page' %}
+			<span class="inline-block px-3 py-1 bg-blue-300 rounded">
+				<a href="/tags/{{tag}}/index.html">{{ tag }}</a>
+			</span>
+			{%- endif %} {%- endfor %}
 		</div>
 	</div>
 	<article class="mx-auto my-4 prose lg:prose-xl">

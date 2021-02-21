@@ -1,0 +1,41 @@
+---
+layout: page
+pagination:
+  data: collections.page
+  size: 2
+  alias: posts
+---
+
+<div class="flex">
+	<div class="w-20 h-auto mr-5 bg-yellow-300 text-dir">
+		<div class="mt-8 text-6xl tracking-widest transform rotate-90">
+			Docs
+		</div>
+	</div>
+	<section class="mt-15">
+		{% set pageslist = collections.page %} {% for page in pageslist |
+		reverse %}
+		<article class="my-8">
+			<h2 class="mb-2 text-3xl font-bold text-gray-900">
+				<a href="{{ page.url | url }}">
+					{% if page.data.title %} {{ page.data.title }} {% else %}
+					Untitled {% endif %}
+				</a>
+			</h2>
+			<p class="mb-3 text-base leading-6 text-gray-500">
+				<time> {{ page.date | readableDate }} </time>
+			</p>
+		</article>
+		{% endfor %}
+	</section>
+	</div>
+	<nav aria-labelledby="docs-pagination">
+  <h2 id="docs-pagination">Docs Pagination</h2>
+  <ol>
+{% for page in pageslist %}
+  <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
+{% endfor %}
+</ol>
+</nav>
+
+
