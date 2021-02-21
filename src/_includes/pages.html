@@ -7,12 +7,12 @@ prism: true
 	<div class="pb-5 mb-5 border-b border-gray-100">
 		<h1 class="text-5xl font-bold">{{title}}</h1>
 		<p class="text-base font-medium leading-6 text-center text-gray-500">
-			<time> {{ date | readableDate }}</time>
+			<time> {{ date | readableDate }} </time>
 		</p>
 		<div>
 			{%- for tag in tags %} {%- if tag !== 'page' %}
-			<span class="inline-block px-3 py-1 bg-blue-300 rounded">
-				{{ tag }}</a>
+			<span class="inline-block px-3 py-1 mr-2 bg-blue-300 rounded">
+				{{ tag }}
 			</span>
 			{%- endif %} {%- endfor %}
 		</div>
