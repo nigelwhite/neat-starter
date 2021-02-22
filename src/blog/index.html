@@ -12,22 +12,25 @@ pagination:
 			Blog
 		</div>
 	</div>
-	<table class="my-8 table-auto mt-15">
+	<table class="mt-4 table-auto">
 		<tbody>
 			{% for post in posts | reverse %}
-			<a href="{{ post.url | url }}">
-				<tr class="mb-10">
-					<td class="font-bold text-gray-900 text-l">
+
+			<tr>
+				<td class="pb-2 font-bold text-gray-900 text-l">
+					<a href="{{ post.url | url }}">
 						{% if post.data.title %} {{ post.data.title }} {% else
 						%} Untitled {% endif %}
-					</td>
-					<td class="pl-4 text-base leading-6 text-gray-500">
-						<time>
-							{{ post.date | readableDate }}
-						</time>
-					</td>
-				</tr>
-			</a>
+					</a>
+				</td>
+				<td
+					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
+				>
+					<time>
+						{{ post.date | readableDate }}
+					</time>
+				</td>
+			</tr>
 
 			{% endfor %}
 		</tbody>
