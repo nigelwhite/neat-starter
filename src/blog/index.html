@@ -1,5 +1,9 @@
 ---
 layout: blog
+pagination:
+    data: collections.post
+    size: 4
+    alias: posts
 ---
 
 <div class="flex">
@@ -9,21 +13,27 @@ layout: blog
 		</div>
 	</div>
 	<section class="mt-15">
-		{% set postslist = collections.post %} {% for post in postslist |
-		reverse %}
-		<article class="my-8">
-			<h2 class="mb-2 text-3xl font-bold text-gray-900">
-				<a href="{{ post.url | url }}">
+		{% for post in posts | reverse %}
+		<a href="{{ post.url | url }}">
+			<article class="my-8">
+				<h2 class="mb-2 text-3xl font-bold text-gray-900">
 					{% if post.data.title %} {{ post.data.title }} {% else %}
 					Untitled {% endif %}
-				</a>
-			</h2>
-			<p class="mb-3 text-base leading-6 text-gray-500">
-				<time>
-					{{ post.date | readableDate }}
-				</time>
-			</p>
-		</article>
+				</h2>
+				<p class="mb-3 text-base leading-6 text-gray-500">
+					<time>
+						{{ post.date | readableDate }}
+					</time>
+				</p>
+			</article>
+		</a>
 		{% endfor %}
 	</section>
+</div>
+<div id="pagination">
+	{% if pagination.href.previous %}
+	<a href="{{pagination.href.previous}}">Previous</a>
+	{% endif %} {% if pagination.href.next %}
+	<a href="{{pagination.href.next}}">Next</a>
+	{%endif%}
 </div>
