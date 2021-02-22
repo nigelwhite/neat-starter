@@ -1,5 +1,9 @@
 ---
-layout: page
+layout: blog
+pagination:
+    data: collections.page
+    size: 20
+    alias: pages
 ---
 
 <div class="flex">
@@ -8,20 +12,34 @@ layout: page
 			Docs
 		</div>
 	</div>
-	<section class="mt-15">
-		{% set pageslist = collections.page %} {% for page in pageslist |
-		reverse %}
-		<article class="my-8">
-			<h2 class="mb-2 text-3xl font-bold text-gray-900">
-				<a href="{{ page.url | url }}">
-					{% if page.data.title %} {{ page.data.title }} {% else %}
-					Untitled {% endif %}
-				</a>
-			</h2>
-			<p class="mb-3 text-base leading-6 text-gray-500">
-				<time> {{ page.date | readableDate }} </time>
-			</p>
-		</article>
-		{% endfor %}
-	</section>
+	<table class="mt-4 table-auto">
+		<tbody>
+			{% for page in pages | reverse %}
+
+			<tr>
+				<td class="pb-2 font-bold text-gray-900 text-l">
+					<a href="{{ page.url | url }}">
+						{% if page.data.title %} {{ page.data.title }} {% else
+						%} Untitled {% endif %}
+					</a>
+				</td>
+				<td
+					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
+				>
+					<time>
+						{{ page.date | readableDate }}
+					</time>
+				</td>
+			</tr>
+
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+<div id="pagination">
+	{% if pagination.href.previous %}
+	<a href="{{pagination.href.previous}}">Previous</a>
+	{% endif %} {% if pagination.href.next %}
+	<a href="{{pagination.href.next}}">Next</a>
+	{%endif%}
 </div>

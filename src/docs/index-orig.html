@@ -1,9 +1,5 @@
 ---
 layout: page
-pagination:
-  data: collections.page
-  size: 2
-  alias: posts
 ---
 
 <div class="flex">
@@ -28,14 +24,4 @@ pagination:
 		</article>
 		{% endfor %}
 	</section>
-	</div>
-	<nav aria-labelledby="docs-pagination">
-  <h2 id="docs-pagination">Docs Pagination</h2>
-  <ol>
-{% for page in pageslist %}
-  <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
-{% endfor %}
-</ol>
-</nav>
-
-
+</div>
