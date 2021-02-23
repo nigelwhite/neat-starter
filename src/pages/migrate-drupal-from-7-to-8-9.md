@@ -3,6 +3,7 @@ title: Migrate Drupal from 7 to 8/9
 date: 2021-02-23T10:36:59.234Z
 tags:
     - drupal
+    - drupal-migrate
 ---
 
 ### Docs
