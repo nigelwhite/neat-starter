@@ -5,16 +5,23 @@
 /*Your Custom CSS Goes here*/
 
 @layer base {
+	a {
+		background-image: linear-gradient(to top, orange, yellow, transparent);
+		background-position: 0 110%;
+		background-repeat: no-repeat;
+		background-size: auto 0.5rem;
+	}
+
 	a:hover {
-		@apply bg-red-300;
+		@apply bg-yellow-200;
 	}
 
 	h1 {
-		@apply mb-3 text-3xl tracking-tighter text-center;
+		@apply mb-3 text-3xl font-bold tracking-tighter text-center;
 	}
 
 	h3 {
-		@apply mb-3 text-2xl font-bold;
+		@apply my-3 text-2xl font-bold;
 	}
 
 	.my-pill {
