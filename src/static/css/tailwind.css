@@ -21,6 +21,10 @@
 		@apply inline-block px-3 py-1 mr-2 bg-blue-200 rounded-full;
 	}
 
+	.my-pill:hover {
+		@apply bg-blue-400;
+	}
+
 	/* Syntax Highlighting*/
 
 	body :not(pre) > code[class*='language-'],

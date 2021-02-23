@@ -11,9 +11,9 @@ prism: true
 		</p>
 		<div>
 			{%- for tag in tags %} {%- if tag !== 'page' %}
-			<span class="my-pill">
-				{{ tag }}
-			</span>
+			<a class="hover:bg-transparent" href="/tags/{{ tag }}">
+				<span class="my-pill">{{ tag }}</span></a
+			>
 			{%- endif %} {%- endfor %}
 		</div>
 	</div>
