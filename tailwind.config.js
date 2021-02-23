@@ -11,7 +11,13 @@ module.exports = {
 			center: true,
 		},
 		extend: {
-			colors: {},
+			colors: {
+				primary: '#ff6363',
+				secondary: {
+					100: '#e2e2d5',
+					200: '#888883',
+				},
+			},
 		},
 		debugScreens: {
 			position: ['top', 'left'],
