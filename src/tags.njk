@@ -8,9 +8,27 @@ permalink: /tags/{{ tag }}/
 ---
 <h1>Tagged “{{ tag }}”</h1>
 
-<ol>
-{% set taglist = collections[ tag ] %}
-{% for post in taglist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-{% endfor %}
-</ol>
+<table class="mt-4 table-auto">
+		<tbody>
+    {% set taglist = collections[ tag ] %}
+			{% for post in taglist | reverse %}
+
+			<tr>
+				<td class="pb-2 font-bold text-gray-900 text-l">
+					<a href="{{ post.url | url }}">
+						{% if post.data.title %} {{ post.data.title }} {% else
+						%} Untitled {% endif %}
+					</a>
+				</td>
+				<td
+					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
+				>
+					<time>
+						{{ post.date | readableDate }}
+					</time>
+				</td>
+			</tr>
+
+			{% endfor %}
+		</tbody>
+	</table>
