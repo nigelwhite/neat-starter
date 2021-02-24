@@ -16,11 +16,7 @@
 		@apply bg-yellow-200;
 	}
 
-	.nav-doc .doc {
-		@apply text-4xl;
-	}
-
-	.nav-blog .blog {
+	.active {
 		@apply text-4xl;
 	}
 
