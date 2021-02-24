@@ -1,6 +1,8 @@
 ---
 items:
-    - text: Blog
+    - text: 'Blog'
       url: '/blog'
-    - text: Docs
+      class: 'nav-blog'
+    - text: 'Docs'
       url: '/docs'
+      class: 'nav-doc'
