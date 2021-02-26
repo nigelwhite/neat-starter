@@ -33,4 +33,5 @@ Steps
 * ddev exec drush cr
 * include \[local drupal settings](https://adventuresindataland.com/blog/including-custom-settings-drupal-using-ddev)
 * enable \[twig debugging](https://www.drupal.org/docs/theming-drupal/twig-in-drupal/debugging-twig-templates)
-*
+* \[local development settings](https://www.drupal.org/node/2598914)
+* \[set up Laravel Mix](https://www.youtube.com/watch?v=BYo4m_VyG24&ab_channel=WebWash)
