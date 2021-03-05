@@ -36,6 +36,41 @@
 		@apply bg-blue-400;
 	}
 
+	/* Styling for Netlify editor options */
+	p {
+		@apply mt-2;
+	}
+
+	code {
+		@apply ml-4 bg-gray-200;
+	}
+
+	pre {
+		@apply mt-2 ml-4 bg-gray-200;
+	}
+
+	blockquote p {
+		@apply ml-4;
+	}
+
+	blockquote p::before {
+		content: '"';
+	}
+
+	blockquote p::after {
+		content: '"';
+	}
+
+	ul {
+		@apply mt-2 list-disc;
+		list-style-position: inside;
+	}
+
+	ol {
+		@apply mt-2 list-decimal;
+		list-style-position: inside;
+	}
+
 	/* Syntax Highlighting*/
 
 	body :not(pre) > code[class*='language-'],
