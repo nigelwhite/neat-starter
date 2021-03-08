@@ -67,8 +67,11 @@
 	}
 
 	ol {
-		@apply mt-2 list-decimal;
-		list-style-position: inside;
+		@apply mt-2 ml-4 list-decimal;
+	}
+
+	ol li {
+		@apply pl-4;
 	}
 
 	/* Syntax Highlighting*/
