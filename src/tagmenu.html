@@ -1,0 +1,16 @@
+---
+layout: blog
+pagination:
+    data: collections
+    size: 1
+    alias: tagmenu
+---
+
+<section>
+	<h1>Docs on ...</h1>
+	<ul class="list-none">
+		{% for tag in collections.tagMenu %}
+		<li>{{ tag }}</li>
+		{% endfor %}
+	</ul>
+</section>
