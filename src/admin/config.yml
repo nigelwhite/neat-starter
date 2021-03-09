@@ -34,6 +34,9 @@ collections:
                     'alpine.js',
                     'drupal-migrate',
                     'drupal-mapping',
+                    css,
+                    js,
+                    tailwind,
                 ]
     - label: 'Docs'
       name: 'docs'
@@ -57,4 +60,7 @@ collections:
                     'alpine.js',
                     'drupal-migrate',
                     'drupal-mapping',
+                    css,
+                    js,
+                    tailwind,
                 ]

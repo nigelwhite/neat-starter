@@ -44,18 +44,18 @@
 			x-show.transition="true"
 		>
 			<ul
-				class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex"
+				class="items-center justify-end flex-1 pt-6 list-none lg:pt-0 list-reset lg:flex"
 			>
 				<li class="mr-3 nav__item">
 					<a
-						class="{{ 'active' if '/blog' in page.url }}"
+						class="{{ 'active' if '/posts' in page.url }} {{ 'active' if '/blog' in page.url}}"
 						href="/blog"
 						>Blog</a
 					>
 				</li>
 				<li class="mr-3 nav__item">
 					<a
-						class="{{ 'active' if '/docs' in page.url }}"
+						class="{{ 'active' if '/docs' in page.url }} {{ 'active' if '/pages' in page.url }}"
 						href="/docs"
 						>Docs</a
 					>
