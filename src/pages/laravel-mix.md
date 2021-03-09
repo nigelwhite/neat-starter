@@ -16,17 +16,18 @@ Steps
 * npm init -y
 * npm install laravel-mix --save-dev
 * touch webpack.mix.js
+
   * in this file insert
 
 ```
 let mix = require('laravel-mix');
 
 mix.sass('src/app.sass', 'css').setPublicPath('public');
-
 ```
+
 * create directory /public
 * create file /public/index.html
-* in index.html <link rel="stylesheet" href="css/app.css" />
+* in index.html `<link rel="stylesheet" href="css/app.css" />`
 * create src/app.sass and put a sass rule in there
 * $ npx mix watch // this will compile on any change
 * for live reload use VS Code Live Server // fast refresh!!
