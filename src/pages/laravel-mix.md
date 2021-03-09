@@ -16,8 +16,7 @@ Steps
 * npm init -y
 * npm install laravel-mix --save-dev
 * touch webpack.mix.js
-
-  * in this file insert
+* in this file insert
 
 ```
 let mix = require('laravel-mix');
