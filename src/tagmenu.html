@@ -10,7 +10,10 @@ pagination:
 	<h1>Docs on ...</h1>
 	<ul class="list-none">
 		{% for tag in collections.tagMenu %}
-		<li>{{ tag }}</li>
+		<li class="text-xl">
+			<a href="/tags/{{ tag }}"> {{tag}} </a>
+		</li>
+
 		{% endfor %}
 	</ul>
 </section>

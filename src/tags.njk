@@ -12,7 +12,7 @@ permalink: /tags/{{ tag }}/
 			Tagged “{{ tag }}”
 		</h1>
 
-<table class="mt-4 table-auto">
+<table class="w-full mt-4">
 		<tbody>
     {% set taglist = collections[ tag ] %}
 			{% for post in taglist | reverse %}
