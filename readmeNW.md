@@ -4,7 +4,7 @@ Docs https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify
 
 Repo
 
-Run npm run start
+Run npm run start // does pre-processing AND live reload
 
 All html files are processed with Nunjacks
 
