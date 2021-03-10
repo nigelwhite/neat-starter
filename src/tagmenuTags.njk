@@ -1,0 +1,39 @@
+---
+layout: blog
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tagmenu-tags/{{ tag }}/
+---
+
+
+<h1>
+			Jolly well Tagged “{{ tag }}”
+		</h1>
+
+<table class="w-full mt-4">
+		<tbody>
+    {% set taglist = collections[ tag ] %}
+			{% for post in taglist | reverse %}
+
+			<tr>
+				<td class="pb-2 font-bold text-gray-900 text-l">
+					<a href="{{ post.url | url }}">
+						{% if post.data.title %} {{ post.data.title }} {% else
+						%} Untitled {% endif %}
+					</a>
+				</td>
+				<td
+					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
+				>
+					<time>
+						{{ post.date | readableDate }}
+					</time>
+				</td>
+			</tr>
+
+			{% endfor %}
+		</tbody>
+	</table>
+ 

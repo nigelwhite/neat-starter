@@ -59,7 +59,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addCollection('tagMenu', (collections) => {
 		const tags = collections
-			.getAll()
+			.getAll(collections)
 			.reduce((tags, item) => tags.concat(item.data.tags), [])
 			.filter((tag) => !!tag)
 			.filter((tag) => tag !== 'page')
