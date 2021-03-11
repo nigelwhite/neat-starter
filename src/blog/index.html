@@ -12,7 +12,7 @@ pagination:
 			Blog
 		</div>
 	</div>
-	<table class="mt-4 table-auto">
+	<table class="w-full mt-4 table-auto">
 		<tbody>
 			{% for post in posts | reverse %}
 
@@ -26,9 +26,7 @@ pagination:
 				<td
 					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
 				>
-					<time>
-						{{ post.date | readableDate }}
-					</time>
+					<time> {{ post.date | readableDate }} </time>
 				</td>
 			</tr>
 
