@@ -8,7 +8,9 @@ tags:
 Resources
 
 -   [repo with instructions for stand-alone projects](https://github.com/JeffreyWay/laravel-mix/blob/master/docs/installation.md#stand-alone-projects) NB instructions incomplete
--   [video](https://www.youtube.com/watch?v=mTlf0PgwS9w&ab_channel=AndreMadarang) NB out of date with the github repo docs
+-   [Andre Madarang video](https://www.youtube.com/watch?v=mTlf0PgwS9w&ab_channel=AndreMadarang) NB out of date with the github repo docs
+-   [Webwash video for drupal bootsrap](https://www.youtube.com/watch?v=BYo4m_VyG24&t=566s&ab_channel=WebWash)
+-   [explanation for Drupal 8](https://fraserclark.com/blog/laravel-mix-with-drupal)
 -   local demo at /dev-sites/learn-laravelmix
 
 Steps
@@ -30,4 +32,9 @@ mix.sass('src/app.sass', 'css').setPublicPath('public');
 -   in index.html `<link rel="stylesheet" href="css/app.css" />`
 -   create src/app.sass and put a sass rule in there
 -   $ npx mix watch // this will compile on any change
--   for live reload use VS Code Live Server // fast refresh!!
+-   for live reload use VS Code Live Server // does not work 12.3.21
+
+Live Reload
+
+-   [video](https://www.youtube.com/watch?v=mTlf0PgwS9w&ab_channel=AndreMadarang) 11.20
+-
