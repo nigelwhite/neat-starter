@@ -80,4 +80,8 @@
 	body pre[class*='language-'] {
 		@apply bg-gray-800;
 	}
+
+	.menu-color {
+		background: #f2f0ee;
+	}
 }
