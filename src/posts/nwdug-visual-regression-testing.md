@@ -1,6 +1,5 @@
 ---
 title: NWDUG Visual Regression Testing
-description: Alex Moreno, works for Acquia.
 author: Nigel
 date: 2021-02-09T19:08:18.150Z
 tags: post
