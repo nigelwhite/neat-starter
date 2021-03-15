@@ -57,14 +57,14 @@ module.exports = function (eleventyConfig) {
 		return content;
 	});
 
-	eleventyConfig.addCollection('tagMenu', (collections) => {
-		const tags = collections
-			.getAll()
+	eleventyConfig.addCollection('pageTags', (collections) => {
+		const uniqueTags = collections
+			.getFilteredByTag('page')
 			.reduce((tags, item) => tags.concat(item.data.tags), [])
 			.filter((tag) => !!tag)
-			.filter((tag) => tag !== 'page')
+			.filter((tag) => !!tag && !['page', 'post'].includes(tag))
 			.sort();
-		return Array.from(new Set(tags));
+		return Array.from(new Set(uniqueTags));
 	});
 
 	// Let Eleventy transform HTML files as nunjucks

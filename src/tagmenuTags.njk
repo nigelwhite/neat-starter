@@ -14,8 +14,8 @@ permalink: /tagmenu-tags/{{ tag }}/
 
 <table class="w-full mt-4">
 		<tbody>
-    {% set taglist = collections[ tag ] %}
-			{% for post in taglist | reverse %}
+    {% set pageTags = collections[ tag ] %}
+			{% for post in pageTags | reverse %}
 
 			<tr>
 				<td class="pb-2 font-bold text-gray-900 text-l">
