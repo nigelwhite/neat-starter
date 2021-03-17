@@ -6,6 +6,10 @@ module.exports = {
 			whitelist: [],
 		},
 	},
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('tailwindcss-debug-screens'),
+	],
 	theme: {
 		container: {
 			center: true,
@@ -23,9 +27,5 @@ module.exports = {
 			position: ['top', 'left'],
 		},
 		variants: {},
-		plugins: [
-			require('@tailwindcss/typography'),
-			require('tailwindcss-debug-screens'),
-		],
 	},
 };
