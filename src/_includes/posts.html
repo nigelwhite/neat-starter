@@ -11,7 +11,7 @@ prism: true
 		>
 			<time> {{ date | readableDate }} </time>
 		</p>
-		<div>
+		<div class="text-center">
 			{%- for tag in tags %} {%- if tag !== 'post' %}
 			<a class="bg-none hover:bg-transparent" href="/tags/{{ tag }}">
 				<span class="my-pill">{{ tag }}</span></a
