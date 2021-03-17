@@ -19,7 +19,7 @@ Steps
 -   go to ddev's local http url (not https)
 -   run through the Drupal install
 -   site should be at welcome page
--   copy web/example.gitignore to .gitignore
+-   do not copy web/example.gitignore to .gitignore - its rubbish. Better copy a previous version of .gitignore from elsewhere, that you know works
 -   git init, add, commit
 -   ddev composer require 'drupal/admin_toolbar:^3.0' and enable in gui
 -   copy example.settings.local.php to sites/default and rename to settings.local.php

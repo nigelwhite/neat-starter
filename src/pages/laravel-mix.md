@@ -21,7 +21,7 @@ Steps
 -   touch webpack.mix.js
 -   in this file insert
 
-```
+```js
 let mix = require('laravel-mix');
 
 mix.sass('src/app.sass', 'css').setPublicPath('public');
@@ -32,9 +32,21 @@ mix.sass('src/app.sass', 'css').setPublicPath('public');
 -   in index.html `<link rel="stylesheet" href="css/app.css" />`
 -   create src/app.sass and put a sass rule in there
 -   $ npx mix watch // this will compile on any change
--   for live reload use VS Code Live Server // does not work 12.3.21
 
 Live Reload
 
--   [video](https://www.youtube.com/watch?v=mTlf0PgwS9w&ab_channel=AndreMadarang) 11.20
--
+-   Laravel Mix has the ability to use Browser sync for live reload
+-   [Andre Madarang video](https://www.youtube.com/watch?v=mTlf0PgwS9w&ab_channel=AndreMadarang) 11.20
+-   npm install -g browser-sync
+-   in a Drupal project, in webpack.mix.js
+
+```js
+let mix = require('laravel-mix');
+
+mix.sass('scss/style.scss', 'css/')
+	// .browserSync("http://permies-d9.ddev.site:81");
+	.browserSync({
+		proxy: 'http://permies-d9.ddev.site:81',
+		files: ['scss/style.scss'],
+	});
+```

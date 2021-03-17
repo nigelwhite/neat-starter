@@ -2,9 +2,7 @@
 
 Docs https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss
 
-Repo
-
-Run npm run start // does pre-processing AND live reload
+npm run start // does pre-processing AND live reload
 
 All html files are processed with Nunjacks
 
