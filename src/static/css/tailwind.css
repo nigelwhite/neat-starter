@@ -62,12 +62,11 @@
 	}
 
 	ul {
-		@apply mt-2 list-disc;
-		list-style-position: inside;
+		@apply mt-2 list-inside;
 	}
 
 	ol {
-		@apply mt-2 ml-4 list-decimal;
+		@apply mt-2 ml-4 list-inside;
 	}
 
 	ol li {
