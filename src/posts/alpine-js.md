@@ -1,7 +1,8 @@
 ---
 title: Alpine.js
 date: 2021-02-23
-tags: post
+tags:
+    - alpine
 ---
 
 [Docs](https://github.com/alpinejs/alpine)

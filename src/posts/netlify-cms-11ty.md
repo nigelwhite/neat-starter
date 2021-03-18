@@ -4,7 +4,6 @@ author: Nigel
 date: 2021-02-06T13:12:42.379Z
 tags:
     - 11ty
-    - start
 ---
 
 ![Voicester](/static/img/voicester.png)

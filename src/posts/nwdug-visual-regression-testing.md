@@ -2,7 +2,9 @@
 title: NWDUG Visual Regression Testing
 author: Nigel
 date: 2021-02-09T19:08:18.150Z
-tags: post
+tags:
+    - drupal
+    - NWDUG
 ---
 
 The problem: developer errors. Errors are harder to spot the further up the workflow they are allowed to persist.

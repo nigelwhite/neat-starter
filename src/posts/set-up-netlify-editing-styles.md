@@ -3,6 +3,7 @@ title: Set up Netlify editing styles
 date: 2021-03-05T15:56:25.515Z
 tags:
     - 11ty
+    - netlify
 ---
 
 Method used -

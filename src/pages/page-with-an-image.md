@@ -3,6 +3,7 @@ title: Page with an image
 date: 2021-02-20T13:51:54.612Z
 tags:
     - image
+    - 11ty
 ---
 
 Here, hopefully, is an image
