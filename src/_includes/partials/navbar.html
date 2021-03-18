@@ -46,16 +46,16 @@
 			<ul
 				class="items-center justify-end flex-1 pt-6 list-none lg:pt-0 list-reset lg:flex"
 			>
-				<li class="mr-3 nav__item">
+				<li class="mr-3 text-2xl lg:pr-4 nav__item">
 					<a
-						class="text-2xl {{ 'active' if '/posts' in page.url }} {{ 'active' if '/blog' in page.url}} "
+						x-bind:class=" {'active': window.location.href.includes ('/blog') || window.location.href.includes ('/posts') }"
 						href="/blog"
 						>Blog</a
 					>
 				</li>
-				<li class="pt-3 mr-3 md lg:pt-0 nav__item">
+				<li class="pt-3 mr-3 text-2xl md lg:pt-0 nav__item">
 					<a
-						class=" text-2xl {{ 'active' if '/docs' in page.url }} {{ 'active' if '/pages' in page.url }} {{ 'active' if '/tagmenu' in page.url }}"
+						x-bind:class=" {'active': window.location.href.includes ('/docs') || window.location.href.includes ('/pages') || window.location.href.includes ('/tagmenu') }"
 						href="/tagmenu"
 						>Docs</a
 					>
