@@ -1,5 +1,5 @@
 ---
-title: Change order of navigation gizmos 1
+title: Change order of PA navigation gizmos 1
 date: 2021-03-17
 tags:
     - drupal

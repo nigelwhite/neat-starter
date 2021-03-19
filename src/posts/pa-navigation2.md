@@ -1,5 +1,5 @@
 ---
-title: Change order of navigation gizmos 2
+title: Change order of PA navigation gizmos 2
 date: 2021-03-19
 tags:
     - drupal
@@ -12,4 +12,6 @@ PA live site uses a subtheme of [Bootstrap 3 for Drupal](https://www.drupal.org/
 
 Steps
 
--   install a local D7 site as per
+-   install a local D7 site as per [my steps](https://upbeat-bhaskara-6b8219.netlify.app/pages/install-drupal7/)
+-   install Bootstrap 3 theme and create subtheme
+-   compare regions in vanilla Bootstrap 3 theme with PA subtheme

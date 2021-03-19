@@ -70,7 +70,8 @@
 	}
 
 	ol li {
-		@apply pl-4;
+		@apply pl-4 my-0;
+		line-height: 0.5rem;
 	}
 
 	/* Syntax Highlighting*/
