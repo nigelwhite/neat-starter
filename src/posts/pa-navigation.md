@@ -1,10 +1,12 @@
 ---
-title: PA Navigation
+title: Change order of navigation gizmos 1
 date: 2021-03-17
 tags:
     - drupal
-    - navigation
+    - pa navigation
 ---
+
+Summary: Initial investigation in local docker PA site
 
 Problems
 
