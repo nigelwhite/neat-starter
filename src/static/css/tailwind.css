@@ -62,16 +62,15 @@
 	}
 
 	ul {
-		@apply mt-2 list-inside;
+		@apply mt-2 list-outside;
 	}
 
 	ol {
-		@apply mt-2 ml-4 list-inside;
+		@apply mt-2 ml-4 list-outside;
 	}
 
 	ol li {
-		@apply pl-4 my-0;
-		line-height: 0.5rem;
+		@apply pl-4;
 	}
 
 	/* Syntax Highlighting*/

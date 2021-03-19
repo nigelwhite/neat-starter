@@ -14,4 +14,5 @@ Steps
 
 -   install a local D7 site as per [my steps](https://upbeat-bhaskara-6b8219.netlify.app/pages/install-drupal7/)
 -   install Bootstrap 3 theme and create subtheme
--   compare regions in vanilla Bootstrap 3 theme with PA subtheme
+-   try to replicate regions in PA subtheme
+-   next step - open PA docker and inspect to replicate in vanilla site
