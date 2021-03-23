@@ -1,5 +1,5 @@
 ---
-title: Set up Netlify editing styles
+title: Netlify editing styles md markup
 date: 2021-03-05T15:56:25.515Z
 tags:
     - 11ty
