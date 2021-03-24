@@ -18,7 +18,7 @@ permalink: /tagmenu-tags/{{ tag }}/
 	</div>
 	<table class="mt-8 ">
 		<tbody>
-    {% set taglist = collections[ tag ] %}
+    {% set taglist = collections.page %}
 			{% for post in taglist | reverse %}
 
 			<tr>
