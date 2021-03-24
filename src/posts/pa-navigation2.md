@@ -25,4 +25,4 @@ Steps
 -   copy page.tpl.php from base bootstrap to bootstrap_sub
 -   add new regions to bootstrap_sub/templates/page.tpl.php as per patterns existing
     -   add them to `<div class="navbar-collapse collapse">` for the new region to be collapsed on small screens
-    -   presumably you can re-order items in page.tpl.php?
+-   next steps: in PA local Docker, try re-ordering items in page.tpl.php

@@ -1,8 +1,8 @@
 ---
 layout: blog
 pagination:
-  data: collections
-  size: 1
+  data: collections.page
+  size: 20
   alias: tag
 permalink: /tagmenu-tags/{{ tag }}/
 ---
@@ -17,13 +17,13 @@ permalink: /tagmenu-tags/{{ tag }}/
 	</div>
 <table class="w-full mt-8">
 		<tbody>
-    {% set pageTags = collections[ tag ] %}
-			{% for post in pageTags | reverse %}
+    {# {% set pageTags = collections.pageTags %} #}
+			{% for page in collections.page | reverse %}
 
 			<tr>
 				<td class="pb-2 font-bold text-gray-900 text-l">
-					<a href="{{ post.url | url }}">
-						{% if post.data.title %} {{ post.data.title }} {% else
+					<a href="{{ page.url | url }}">
+						{% if page.data.title %} {{ page.data.title }} {% else
 						%} Untitled {% endif %}
 					</a>
 				</td>
@@ -31,7 +31,7 @@ permalink: /tagmenu-tags/{{ tag }}/
 					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
 				>
 					<time>
-						{{ post.date | readableDate }}
+						{{ page.date | readableDate }}
 					</time>
 				</td>
 			</tr>
