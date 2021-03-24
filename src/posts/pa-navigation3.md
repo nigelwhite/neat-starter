@@ -21,9 +21,9 @@ Site must be prepared for theme dev with [these steps](https://upbeat-bhaskara-6
 -   add this
 
 ```php
--   <?php if (!empty($gizmos)): ?>
-        <?php print render($gizmos); ?>
-    <?php endif; ?>
+<?php if (!empty($gizmos)): ?>
+    <?php print render($gizmos); ?>
+<?php endif; ?>
 ```
 
 -   as the last item in navbar-collapse div
