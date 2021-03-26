@@ -1,9 +1,9 @@
 ---
 layout: blog
 pagination:
-  data: collections
+  data: collections.myPages
   size: 1
-  alias: tag
+  alias: tagmenuTags
 permalink: /tagmenu-tags/{{ tag }}/
 ---
 
@@ -18,7 +18,8 @@ permalink: /tagmenu-tags/{{ tag }}/
 	</div>
 	<table class="mt-8 ">
 		<tbody>
-    {% set taglist = collections.page %}
+    {% set taglist = collections[tag] %}
+	
 			{% for post in taglist | reverse %}
 
 			<tr>
