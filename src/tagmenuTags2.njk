@@ -5,7 +5,7 @@ pagination:
   size: 1
   alias: tag
 addAllPagesToCollections: true
-permalink: pages2/{{ pageTags2 | lower | slug }}/
+permalink: pages2/{{ pagination.pageNumber }}/
 ---
 {% set pages = collections[tag] | reverse %}
 
