@@ -70,6 +70,19 @@ module.exports = function (eleventyConfig) {
 		return Array.from(new Set(allPages));
 	});
 
+	eleventyConfig.addCollection('pageTags2', (collection) => {
+		const pages = collection.getFilteredByTag('page');
+		let tagSet = new Set();
+		pages.forEach((temp) => {
+			if ('tags' in temp.data) {
+				for (const tag of temp.data.tags) {
+					tagSet.add(tag);
+				}
+			}
+		});
+		return [...tagSet];
+	});
+
 	// Let Eleventy transform HTML files as nunjucks
 	// So that we can use .html instead of .njk
 	return {
