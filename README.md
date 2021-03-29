@@ -1,3 +1,9 @@
+# Nigel White's personal blog "Voicester"
+
+A bunch of personal jottings and reference notes on my learning journey.
+
+Many thanks to Surjith S M ( [@surjithctly](https://surjithctly.in/) ) who created the Neat Starter, which got me started. See details below.
+
 # Neat Starter
 
 Starter Template for **N**etlify CMS, **E**leventy, **A**lphine JS & **T**ailwind CSS
