@@ -18,7 +18,7 @@ Resources
 
 Steps
 
--   install a local D7 site as per [my steps](https://upbeat-bhaskara-6b8219.netlify.app/pages/install-drupal7/)
+-   install a local D7 site at ddev/permies-d7 as per [my steps](https://upbeat-bhaskara-6b8219.netlify.app/pages/install-drupal7/)
 -   install Bootstrap 3 theme and create subtheme
 -   dl jquery_update and get latest jquery // needed for mobile nav hamburger to work
 -   add new regions in bootstrap_sub.info
