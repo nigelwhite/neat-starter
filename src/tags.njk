@@ -19,8 +19,9 @@ permalink: /tags/{{ tag }}/
 	<table class="mt-8 ">
 		<tbody>
     {% set taglist = collections[ tag ] %}
+	
 			{% for post in taglist | reverse %}
-
+			{% set link = post.url | truncate(5) %}
 			<tr>
 				<td class="pb-2 font-bold text-gray-900 text-l">
 					<a href="{{ post.url | url }}">
@@ -28,6 +29,15 @@ permalink: /tags/{{ tag }}/
 						%} Untitled {% endif %}
 					</a>
 				</td>
+				
+				
+				{% if link === '/page...' %}
+					<td>Doc</td>
+					{% endif %}
+				{% if link === '/post...' %}
+					<td>Blog</td>
+					{% endif %}
+				
 				<td
 					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
 				>
