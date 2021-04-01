@@ -1,39 +1,40 @@
 ---
 layout: blog
 pagination:
-  data: collections.pageTags2
+  data: collections.pageTags
   size: 1
   alias: tag
-addAllPagesToCollections: true
-permalink: pages2/{{ pagination.pageNumber }}/
+  addAllPagesToCollections: true
+permalink: page-collections/{{ tag }}/
 ---
-{% set pages = collections[tag] | reverse %}
-
 <div class="flex flex-col w-full">
-	<div class="py-2 tracking-widest text-center bg-yellow-300 md:text-4xl">
-		{{tag}}
+	<div
+			class="py-2 tracking-widest text-center bg-yellow-300 md:text-4xl"
+		>
+			{{tag}}
+		
 	</div>
-	<table class="mt-8">
+	<table class="mt-8 ">
 		<tbody>
-  {% for page in pages %}
-    
-
+			{% for post in collections.page | reverse %}
+			{% if post.data.tags.includes(tag) %}
 			<tr>
 				<td class="pb-2 font-bold text-gray-900 text-l">
-					<a href="{{ page.url | url }}">
-						{% if page.title %} {{ page.title }} {% else %} Untitled
-						{% endif %}
+					<a href="{{ post.url | url }}">
+						{% if post.data.title %} {{ post.data.title }} {% else
+						%} Untitled {% endif %}
 					</a>
 				</td>
 				<td
 					class="pb-2 pl-4 text-base leading-6 text-right text-gray-500"
 				>
-					<time> {{ page.date | readableDate }} </time>
+					<time>
+						{{ post.date | readableDate }}
+					</time>
 				</td>
 			</tr>
-
-			
-      
+			{% endif %}
+			{% endfor %}
 		</tbody>
-</section>
-{% endfor %}
+	</table>
+	</div>
