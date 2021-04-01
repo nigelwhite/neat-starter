@@ -13,7 +13,7 @@
 	}
 
 	a:hover {
-		@apply bg-yellow-200;
+		@apply transition-colors duration-1000 ease-in-out bg-yellow-200 bg-blue-300;
 	}
 
 	.active {
