@@ -17,10 +17,11 @@ pagination:
 		</div>
 		<ul class="list-none">
 			{% for tag in collections.pageTags %}
+			
 			<li class="text-xl">
-				<a href="/tags/{{ tag }}/"> {{tag}} </a>
+				<a href="/page-collections/{{ tag }}/"> {{ tag }} </a>
 			</li>
-
+	
 			{% endfor %}
 			<li class="text-xl"><a href="/docs">all</a></li>
 		</ul>
