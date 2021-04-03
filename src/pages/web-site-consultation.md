@@ -10,6 +10,7 @@ Questions
 * who needs to log in? To do what?
 * do you need a shop?
 * what page patterns do you need? > wireframes
+* will there be a private area, visible only to some (logged-in) users?
 
 Roles needed
 * project owner (owner)
