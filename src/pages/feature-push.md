@@ -1,6 +1,6 @@
 ---
 title: Feature push to PA live
-date: 2001-04-06
+date: 2021-04-06
 tags:
     - pa
     - drupal
@@ -12,7 +12,7 @@ Resources
 -   [PA Docker general workflow](https://nwhite.uk/oyster/node/1360)
 -   [Features module explanation](https://nwhite.uk/oyster/node/1350)
 -   [Docker training no 2. Tom. 23.11.20](https://nwhite.uk/oyster/node/1356)
--   [Meeting with Tom and Nicola 22.2.21](https://nwhite.uk/oyster/node/1386)
+-   [Meeting with Tom and Nicola 22.2.21](https://nwhite.uk/oyster/node/1386). Good for Stage Portainer instructions.
 -   [Map work 18.2.21](https://nwhite.uk/oyster/node/1380)
 -   [Mapping. Key gotchas](https://nwhite.uk/oyster/node/1381)
 -   [Map work 10.2.21. Documents the stuckness before Tom clarified the process](https://nwhite.uk/oyster/node/1377)
@@ -65,6 +65,49 @@ Steps in on-line Stage site at https://stage.permaculture.org.uk
 -   look at Status Report. Some modules have database schema updates to install. You should run the database update script immediately.
 -   Tried to Download backup of db but waiting.... waiting
 
-Next
+Locations in Stage
 
--   log in to Stage Portainer and take a snapshot of db before doing update.php
+-   [map views config](https://stage.permaculture.org.uk/admin/structure/views/view/project_w_geo/edit)
+    -   from this I can see that Chapel Lane did not get geocoded
+-   [map all nodes](https://stage.permaculture.org.uk/project_w_geo_map)
+-   [Proximity map](https://stage.permaculture.org.uk/project_w_geo_proximity)
+
+Next steps
+
+-   log in to Stage Portainer, to stage-permaculture-drupal container
+    -   this keeps closing the terminal after approx 1-2 mins
+-   permissions.sh
+    -   looked in ls -al and permissions.sh is not present
+-   can't think of a way of backing up the db .... (on local I would have copied the database container to make a snapshot)
+-   update.php > access denied
+-   gave 'developer' role the permission 'administer software updates'
+-   update.php
+
+![Errors](/static/img/update-error.png 'errors')
+
+-   Continue
+-   5 pending updates
+-   huge list of civicrm related errors. All errors have been logged
+-   looked again at Chapel Lane node. Edited and saved > no map and no map container!!
+-   change Geofield widget to Geofield from another field
+-   re-edit Chapel Lane and map shows!! Yay
+-   create content of CT Project2_w_geo 'Moordene'. Map shows. Yay
+-   at [map all nodes](https://stage.permaculture.org.uk/project_w_geo_map) there are no markers showing
+    -   ah, icon images are missing from the default fields in the CT config
+    -   uploaded a default icon to project2_w_geo
+    -   project_w_geo has no image field!
+    -   add an existing field_map_icon field
+    -   map shows icons. Yay
+-   check [Proximity map](https://stage.permaculture.org.uk/project_w_geo_proximity). Works. Yay
+
+Next steps
+
+-   Tom to transfer 'feature_leaflet_map' to live
+-   Nigel to configure the maps in Live (ie database settings, css, etc)
+-   Nigel to populate CT Project2 with the fields that Sarah requires
+-   Helen to liaise with Sarah to get the datasheet of the Projects she wants on the site
+-   Nigel to show Helen how to add data to CT Project2
+-   Helen to enter the data
+-   Nigel to test map views for Project2
+-   Nigel to delete CT Project and rename Project2 to Project.
+-   Nigel to connect menu links, etc
