@@ -39,6 +39,7 @@ collections:
                     html,
                     tailwind,
                     CiviCRM,
+                    PA,
                 ]
     - label: 'Docs'
       name: 'docs'
@@ -67,4 +68,5 @@ collections:
                     html,
                     tailwind,
                     CiviCRM,
+                    PA,
                 ]
