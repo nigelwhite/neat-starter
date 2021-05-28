@@ -7,4 +7,7 @@ tags:
 Install or update Ddev
 > Ddev [recommend using Homebrew on Linux](https://ddev.readthedocs.io/en/stable/) to install and update.
 
+In terminal
+> git clone https://github.com/nigelwhite/permies-d9.git
+> cd permies-d9
 
