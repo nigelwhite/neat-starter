@@ -8,10 +8,10 @@ Installation instructions for installing Permies-d9 for mess-about practice.
 
 The repo is called permies-d9
 
-Requires [Docker](https://docs.docker.com/engine/install/ubuntu/) and [docker-compose](https://docs.docker.com/compose/install/) on local machine. You can ignore 'mkcert -install' steps both on this installation and when starting a project.
+Requires [Docker](https://docs.docker.com/engine/install/ubuntu/) and [docker-compose](https://docs.docker.com/compose/install/) on local machine.
 
 Install or update Ddev
-> Ddev [recommend using Homebrew on Linux](https://ddev.readthedocs.io/en/stable/) to install and update.
+> Ddev [recommend using Homebrew on Linux](https://ddev.readthedocs.io/en/stable/) to install and update. You can ignore 'mkcert -install' steps both on this installation and when starting a project.
 
 In terminal
 > git clone https://github.com/nigelwhite/permies-d9.git
