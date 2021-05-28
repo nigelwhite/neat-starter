@@ -4,7 +4,6 @@ date: 2021-03-24
 tags:
     - drupal
     - pa
-    - d7
 ---
 
 Prep for local theme development
