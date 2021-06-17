@@ -2,7 +2,7 @@
 title: Laravel Mix
 date: 2021-03-09T12:35:36.726Z
 tags:
-    - css
+  - css
 ---
 
 Resources
@@ -15,7 +15,7 @@ Resources
 
 Steps
 
--   make a new project and cd into it
+-   make a new project and cd into it. If Drupal this should be your subtheme directory.
 -   npm init -y
 -   npm install laravel-mix --save-dev
 -   touch webpack.mix.js
@@ -26,6 +26,8 @@ let mix = require('laravel-mix');
 
 mix.sass('src/app.sass', 'css').setPublicPath('public');
 ```
+
+For a Drupal project, see below
 
 -   create directory /public
 -   create file /public/index.html
