@@ -1,6 +1,6 @@
 <div class="{{ 'lg:fixed' if path == 'home' }} w-full menu-color">
 	<nav
-		class="container flex flex-wrap items-center justify-center p-6 mx-auto lg:justify-between lg:px-0"
+		class="container flex flex-wrap items-center justify-center p-6 mx-auto  lg:justify-between lg:px-0"
 		x-data="{ isOpen: false }"
 		@keydown.escape="isOpen = false"
 	>
@@ -13,7 +13,7 @@
 		<button
 			@click="isOpen = !isOpen"
 			type="button"
-			class="block px-2 ml-auto lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500"
+			class="block px-2 ml-auto  lg:hidden text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500"
 			:class="{ 'transition transform-180': isOpen }"
 			aria-label="Menu"
 		>
@@ -38,13 +38,13 @@
 
 		<!--Menu-->
 		<div
-			class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto"
+			class="flex-grow w-full text-center  lg:flex lg:items-center lg:w-auto"
 			:class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
 			@click.away="isOpen = false"
 			x-show.transition="true"
 		>
 			<ul
-				class="items-center justify-end flex-1 pt-6 list-none lg:pt-0 list-reset lg:flex"
+				class="items-center justify-end flex-1 pt-6 list-none  lg:pt-0 list-reset lg:flex"
 			>
 				<li class="mr-3 text-2xl lg:pr-4 nav__item">
 					<a
@@ -55,7 +55,7 @@
 				</li>
 				<li class="pt-3 mr-3 text-2xl md lg:pt-0 nav__item">
 					<a
-						x-bind:class=" {'active': window.location.href.includes ('/page-collections') || window.location.href.includes ('/pages') || window.location.href.includes ('/tagmenu') }"
+						x-bind:class=" {'active': window.location.href.includes ('/page-collections') || window.location.href.includes ('/pages') || window.location.href.includes ('/tagmenu') || window.location.href.includes ('/docs')}"
 						href="/tagmenu"
 						>Docs</a
 					>
