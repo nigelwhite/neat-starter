@@ -65,6 +65,14 @@ module.exports = function (eleventyConfig) {
 		return Array.from(new Set(uniqueTags));
 	});
 
+	eleventyConfig.addCollection('myPostsReverse', (collections) => {
+		const uniqueTags = collections
+			.getFilteredByTag('post')
+			.sort()
+			.reverse();
+		return Array.from(new Set(uniqueTags));
+	});
+
 	eleventyConfig.addCollection('myPages', (collections) => {
 		const allPages = collections.getFilteredByTag('page');
 		return Array.from(new Set(allPages));
@@ -90,6 +98,6 @@ module.exports = function (eleventyConfig) {
 			input: 'src',
 		},
 		htmlTemplateEngine: 'njk',
-		markdownTemplateEngine: 'njk'
+		markdownTemplateEngine: 'njk',
 	};
 };

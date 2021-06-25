@@ -1,7 +1,7 @@
 ---
 layout: blog
 pagination:
-    data: collections.post
+    data: collections.myPostsReverse
     size: 20
     alias: posts
 	reverse: true
@@ -17,7 +17,7 @@ pagination:
 	</div>
 	<table class="w-full mt-4 table-auto">
 		<tbody>
-			{% for post in posts | reverse %}
+			{% for post in posts %}
 
 			<tr>
 				<td class="pb-2 font-bold text-gray-900 text-l">
