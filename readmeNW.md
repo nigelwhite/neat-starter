@@ -7,6 +7,8 @@ npx @11ty/eleventy --serve // does pre-processing AND live reload
 npm info @11ty/eleventy version // get version
 npm update @11ty/eleventy // update
 
+npm install // after a pull containing package.json changes
+
 All html files are processed with Nunjacks
 
 Collections in 11ty are defined only by tags
