@@ -71,7 +71,7 @@ collections:
                     PA,
                 ]
     - label: 'Tags'
-      name: 'tags'
+      name: 'tags_source'
       folder: 'src/tags'
       create: true
       editor:
