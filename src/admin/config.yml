@@ -72,7 +72,7 @@ collections:
                 ]
     - label: 'Tags Source'
       name: 'tags_source'
-      folder: 'src/tags'
+      folder: 'src/tags_source'
       create: true
       editor:
           preview: false
