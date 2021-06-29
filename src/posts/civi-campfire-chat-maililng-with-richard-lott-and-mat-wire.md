@@ -2,7 +2,7 @@
 title: Civi Campfire Chat. Maililng with Richard Lott and Mat Wire
 date: 2021-06-25T16:31:16.798Z
 tags:
-  - CiviCRM
+  - civi meetup
 ---
 Mat Wire maintains core, Strip and other extensions. mjw consulting.
 
