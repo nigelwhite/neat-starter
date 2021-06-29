@@ -70,7 +70,7 @@ collections:
                     CiviCRM,
                     PA,
                 ]
-    - label: 'Tags'
+    - label: 'Tags Source'
       name: 'tags_source'
       folder: 'src/tags'
       create: true
