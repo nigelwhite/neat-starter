@@ -3,9 +3,9 @@ title: Netlify CMS + 11ty
 date: 2021-02-06T13:12:42.379Z
 tags:
     - 11ty
-    - alpine.js
+    - alpine
     - tailwind
-    - Netlify CMS
+    - netlify
 ---
 
 ![Voicester](/static/img/voicester.png)

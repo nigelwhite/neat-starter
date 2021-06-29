@@ -2,9 +2,12 @@
 title: Embed Inkpot Instagram post into Inkpot web site
 date: 2021-06-22T05:42:22.179Z
 tags:
-  - js
+    - js
+    - instagram
 ---
+
 You can easily embed one Instagram post with code Instagram provide eg
+
 ```html
 <blockquote class="instagram-media" data-instgrm-captioned>
         <div style="padding:16px;">
@@ -16,6 +19,7 @@ You can easily embed one Instagram post with code Instagram provide eg
         <script async src="//www.instagram.com/embed.js"></script>
       </blockquote>
 ```
+
 This provides the whole post, text and links.
 
 With this method you can't embed just the image. You can't embed a gallery of images.

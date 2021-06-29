@@ -2,8 +2,9 @@
 title: Checksum links
 date: 2021-05-19T10:53:04.024Z
 tags:
-  - drupal
+    - civiCRM
 ---
+
 The advice I've had is "don't use checksum links as they are not secure".
 
 Drupal Assoc recently sent me a checksum link. Has something changed to make them more secure? [problem has been that anyone with the link can get in to the destination account].

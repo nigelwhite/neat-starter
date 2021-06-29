@@ -3,6 +3,7 @@ title: PA D9
 date: 2021-02-25T12:21:18.350Z
 tags:
     - drupal
+    - Perm Assoc
 ---
 
 Resources
@@ -24,7 +25,7 @@ Steps
 -   ddev composer require 'drupal/admin_toolbar:^3.0' and enable in gui
 -   copy example.settings.local.php to sites/default and rename to settings.local.php
 -   uncomment reference to settings.local.php at end of settings.php
--   in settings.php change line 264 to $settings\['config_sync_directory'] = '../config/sync'; and create those folders in site root, above /web
+-   in settings.php change line 264 to \$settings\['config_sync_directory'] = '../config/sync'; and create those folders in site root, above /web
 -   ddev exec drush cr
 -   enable [twig debugging](https://www.drupal.org/docs/theming-drupal/twig-in-drupal/debugging-twig-templates)
 -   [local development settings](https://www.drupal.org/node/2598914). Note other development setup tips but prevent development.services.yml from being overwritten on composer actions [this way](https://www.drupal.org/forum/support/post-installation/2016-09-15/composer-update-overwrites-developmentservicesyml)

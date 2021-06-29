@@ -2,7 +2,8 @@
 title: Laravel Mix
 date: 2021-03-09T12:35:36.726Z
 tags:
-  - css
+    - css
+    - preprocessors
 ---
 
 Resources
@@ -33,7 +34,7 @@ For a Drupal project, see below
 -   create file /public/index.html
 -   in index.html `<link rel="stylesheet" href="css/app.css" />`
 -   create src/app.sass and put a sass rule in there
--   $ npx mix watch // this will compile on any change
+-   \$ npx mix watch // this will compile on any change
 
 Live Reload
 

@@ -2,9 +2,9 @@
 title: Feature push to PA live
 date: 2021-04-06
 tags:
-    - pa
+    - Perm Assoc
     - drupal
-    - features
+    - drupal features
 ---
 
 Resources

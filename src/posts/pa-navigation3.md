@@ -3,7 +3,8 @@ title: Change order of PA navigation gizmos 3
 date: 2021-03-24
 tags:
     - drupal
-    - pa
+    - pa navigation
+    - Perm Assoc
 ---
 
 Theme changes 1

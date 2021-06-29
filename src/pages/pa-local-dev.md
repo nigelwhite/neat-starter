@@ -3,7 +3,7 @@ title: D7 local development preparation
 date: 2021-03-24
 tags:
     - drupal
-    - pa
+    - Perm Assoc
 ---
 
 Prep for local theme development

@@ -4,6 +4,7 @@ date: 2021-03-17
 tags:
     - drupal
     - pa navigation
+    - Perm Assoc
 ---
 
 Summary: Initial investigation in local docker PA site

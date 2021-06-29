@@ -4,6 +4,7 @@ date: 2021-03-19
 tags:
     - drupal
     - pa navigation
+    - Perm Assoc
 ---
 
 Summary: Test PA navigation in a vanilla Drupal 7 site, in a local docker container

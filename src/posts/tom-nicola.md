@@ -2,7 +2,8 @@
 title: Meeting with Tom
 date: 2021-04-22
 tags:
-    - PA docker
+    - docker
+    - Perm Assoc
 ---
 
 File permissionserrors on local containers

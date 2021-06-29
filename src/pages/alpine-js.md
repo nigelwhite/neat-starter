@@ -3,6 +3,7 @@ title: Alpine.js
 date: 2021-02-24
 tags:
     - alpine
+    - 11ty
 ---
 
 Video tutorials
