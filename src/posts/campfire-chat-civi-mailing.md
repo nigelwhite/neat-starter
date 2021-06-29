@@ -1,5 +1,5 @@
 ---
-title: Campfire Chat. Civi Maililng
+title: Campfire Chat. Civi Mailing
 date: 2021-06-25T16:31:16.798Z
 tags:
     - civiCRM
