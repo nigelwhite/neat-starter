@@ -70,11 +70,3 @@ collections:
                     CiviCRM,
                     PA,
                 ]
-    - label: 'Tags'
-      name: 'tags'
-      folder: 'src/tags'
-      create: true
-      editor:
-          preview: false
-      fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
