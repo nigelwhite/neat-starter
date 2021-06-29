@@ -1,5 +1,5 @@
 ---
-title: Civi Campfire Chat. Maililng with Richard Lott and Mat Wire
+title: Campfire Chat. Civi Maililng
 date: 2021-06-25T16:31:16.798Z
 tags:
   - civi meetup
