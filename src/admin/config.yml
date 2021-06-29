@@ -26,9 +26,9 @@ collections:
             label: 'tags'
             name: 'tags'
             collection: 'tags_source'
-            search_fields: 'title'
+            search_fields: ['title']
             value_field: 'title'
-            display_fields: 'title'
+            display_fields: ['title']
             multiple: true
     - label: 'Docs'
       name: 'docs'
