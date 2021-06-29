@@ -40,25 +40,14 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-          - widget: select
+          - widget: relation
             label: 'tags'
             name: 'tags'
+            collection: 'tags_source'
+            search_fields: ['title']
+            value_field: 'title'
+            display_fields: ['title']
             multiple: true
-            options:
-                [
-                    'page',
-                    'drupal',
-                    '11ty',
-                    'alpine',
-                    'drupal-migrate',
-                    'drupal-mapping',
-                    css,
-                    js,
-                    html,
-                    tailwind,
-                    CiviCRM,
-                    PA,
-                ]
     - label: 'Tags Source'
       name: 'tags_source'
       folder: 'src/tags_source'
