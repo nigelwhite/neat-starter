@@ -1,5 +1,5 @@
 ---
-title: Civi trainings
+title: Civi with Views, Calendars, Maps
 date: 2021-06-22T15:16:23.262Z
 tags:
   - CiviCRM
