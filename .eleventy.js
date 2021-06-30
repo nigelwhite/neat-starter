@@ -3,7 +3,7 @@ const { DateTime } = require('luxon');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const htmlmin = require('html-minifier');
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
 	// Disable automatic use of your .gitignore
 	eleventyConfig.setUseGitIgnore(false);
 
@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('./src/favicon.ico');
 
 	// Minify HTML
-	eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+	eleventyConfig.addTransform('htmlmin', function(content, outputPath) {
 		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
 		if (outputPath.endsWith('.html')) {
 			let minified = htmlmin.minify(content, {

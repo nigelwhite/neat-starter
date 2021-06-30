@@ -3,7 +3,7 @@ layout: blog
 pagination:
     data: collections.pageTags
     size: 1
-	alias: tagmenu/
+alias: tagmenu/
 ---
 
 <section>
@@ -17,7 +17,7 @@ pagination:
 		</div>
 		<ul class="list-none">
 			<li class="text-xl"><a href="/docs">all</a></li>
-			{% for tag in collections.pageTags %}
+			{% for tag in collections.pageTags | sort %}
 
 			<li class="text-xl">
 				<a href="/page-collections/{{ tag }}/"> {{ tag }} </a>
