@@ -11,3 +11,4 @@ Admin
 
 Use
 - git checkout . // discards all changes since last commit
+- git remote remove origin // remove connection to remote
