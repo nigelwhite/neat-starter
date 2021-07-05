@@ -12,4 +12,6 @@ tags:
 * stop screen share
 * stop recording
 * stop meeting
-* recording is automatically converted and saved to my harddrive at /home/nigel/Documents/Zoom/date
+* recording is automatically converted. A progress bar appears in a second zoom window.
+* recording is saved to my harddrive at /home/nigel/Documents/Zoom/date.
+* the folder is automatically opened in file browser
