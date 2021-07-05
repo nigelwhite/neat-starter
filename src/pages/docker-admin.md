@@ -1,5 +1,6 @@
 ---
 title: Docker admin
+date: 2021-07-04
 tags:
     - docker
 ---
