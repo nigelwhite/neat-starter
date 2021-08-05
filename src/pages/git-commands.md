@@ -12,3 +12,4 @@ Admin
 Use
 - git checkout . // discards all changes since last commit
 - git remote remove origin // remove connection to remote
+- git rm -r --cached . // To empty git cache, add+commit, then do git rm -r --cached ., then add+commit
